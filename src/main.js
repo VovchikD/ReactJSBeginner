@@ -1,20 +1,16 @@
 import React from 'react';
 import Header from './components/header';
-import Image from './components/image';
-import logo from './img/icone_user.svg'
+import Users from './components/users';
 
 class Main extends React.Component {
-  helpText = "Write text!!!"
   render() {
-    return (<div className="name">
-      <Header title="Header Project"/>
-      <h1>{this.helpText}</h1>
-      <input placeholder={this.helpText} onClick={this.inputClick} onMouseEnter={this.overMouse} />
-      <Image image={logo}/>
+    return (<div>
+      <Header title="List users"/>
+      <main>
+        <Users />
+      </main>
     </div>)
   }
 
-  inputClick() {console.log("Clicked!")}
-  overMouse() {console.log("Mouse Over!")}
 }
 export default Main
