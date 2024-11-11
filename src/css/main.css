@@ -37,3 +37,53 @@ main .user {
   background-color: #3e8fa0;
   padding: 20px;
 }
+
+main .delete-icon {
+  float: right;
+  color: rgb(245, 52, 9);
+  cursor: pointer;
+  transform: scale(2);
+}
+
+main .edit-icon {
+  float: right;
+  margin-right: 25px;
+  color: #12badf;
+  cursor: pointer;
+  transform: scale(2);
+}
+
+main .delete-icon:hover,
+main .edit-icon:hover {
+  opacity: 0.5;
+}
+
+aside form input:not([type="checkbox"]), aside form button {
+  width: 90%;
+  padding: 15px 5%;
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 400;
+  border: 0;
+  background: black;
+  color: antiquewhite;
+  outline: none;
+  font-size: 15px;
+}
+
+aside form input[type="checkbox"] {
+  margin: 10px;
+}
+
+aside form input:hover {
+  transform: scale(1.1);
+}
+
+aside form button {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 500ms ease;
+}
+
+aside form button:hover {
+  transform: scale(1.1);
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/header';
 import Users from './components/users';
+import AddUser from './components/addUser';
 
 class Main extends React.Component {
   render() {
@@ -9,6 +10,9 @@ class Main extends React.Component {
       <main>
         <Users />
       </main>
+      <aside>
+        <AddUser />
+      </aside>
     </div>)
   }
 
