@@ -18,7 +18,12 @@ class AddUser extends React.Component {
         <input placeholder='Age' onChange={(e) => this.setState({ age: e.target.value })} />
         <lable htmlFor='isHappy'>Are you Happy?</lable>
         <input type='checkbox' id='isHappy' onChange={(e) => this.setState({ isHappy: e.target.checked })} />
-        <button type='button'>Continue</button>
+        <button type='button' onClick={() => this.props.onAdd({
+          firstname: this.state.firstname,
+          lastname: this.state.lastname,
+          age: this.state.age,
+          isHappy: this.state.isHappy
+        })}>Continue</button>
       </form>
     )
   }
