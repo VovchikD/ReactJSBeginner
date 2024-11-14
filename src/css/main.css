@@ -58,7 +58,7 @@ main .edit-icon:hover {
   opacity: 0.5;
 }
 
-aside form input:not([type="checkbox"]), aside form button {
+form input:not([type="checkbox"]), aside form button {
   width: 90%;
   padding: 15px 5%;
   font-family: "Mountains of Christmas", serif;
@@ -70,11 +70,11 @@ aside form input:not([type="checkbox"]), aside form button {
   font-size: 15px;
 }
 
-aside form input[type="checkbox"] {
+form input[type="checkbox"] {
   margin: 10px;
 }
 
-aside form input:hover {
+form input:hover {
   transform: scale(1.1);
 }
 
@@ -84,6 +84,6 @@ aside form button {
   transition: transform 500ms ease;
 }
 
-aside form button:hover {
+form button:hover {
   transform: scale(1.1);
 }
